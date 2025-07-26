@@ -14,9 +14,6 @@ const db = require('./config/database');
 
 // Import routes
 const productRoutes = require('./routes/products');
-const customerRoutes = require('./routes/customers');
-const orderRoutes = require('./routes/orders');
-const reportRoutes = require('./routes/reports');
 
 // =============================================
 // Middleware Setup
@@ -101,9 +98,6 @@ app.get('/api', (req, res) => {
 
 // Mount API routes
 app.use('/api/products', productRoutes);
-app.use('/api/customers', customerRoutes);
-app.use('/api/orders', orderRoutes);
-app.use('/api/reports', reportRoutes);
 
 // =============================================
 // Error Handling Middleware
